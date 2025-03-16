@@ -1,49 +1,15 @@
-
 import { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
-import OutfitCard, { Outfit } from '@/components/OutfitCard';
+import OutfitCard from '@/components/OutfitCard';
 import { useNavigate } from 'react-router-dom';
-
-const featuredOutfits: Outfit[] = [
-  {
-    id: '1',
-    name: 'Casual Summer Dress',
-    category: 'Dresses',
-    description: 'Lightweight summer dress perfect for hot days.',
-    image: 'https://images.unsplash.com/photo-1578587018452-892bacefd3f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-    price: '$89.99'
-  },
-  {
-    id: '2',
-    name: 'Business Suit',
-    category: 'Formal',
-    description: 'Professional suit for business meetings and formal events.',
-    image: 'https://images.unsplash.com/photo-1594938291221-94f18cbb5660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
-    price: '$249.99'
-  },
-  {
-    id: '3',
-    name: 'Casual Jacket',
-    category: 'Outerwear',
-    description: 'Stylish jacket for casual everyday wear.',
-    image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80',
-    price: '$129.99'
-  },
-  {
-    id: '4',
-    name: 'Summer T-Shirt',
-    category: 'Casual',
-    description: 'Lightweight t-shirt for summer days.',
-    image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80',
-    price: '$39.99'
-  }
-];
+import { outfits } from '@/data';
 
 const Index = () => {
   const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
+  const featuredOutfits = outfits.slice(0, 4); // Get first 4 outfits for featured section
   
   useEffect(() => {
     setIsVisible(true);

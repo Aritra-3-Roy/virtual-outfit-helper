@@ -1,15 +1,6 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-export interface Outfit {
-  id: string;
-  name: string;
-  category: string;
-  description: string;
-  image: string;
-  price: string;
-}
+import { Outfit } from '@/data';
 
 interface OutfitCardProps {
   outfit: Outfit;
