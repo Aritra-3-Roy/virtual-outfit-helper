@@ -65,10 +65,10 @@ const Hero = () => {
           </button>
           
           <button 
-            onClick={() => navigate('/collection')}
+            onClick={() => navigate('/try-on')}
             className="px-8 py-3 bg-transparent border border-white text-white font-medium rounded-md transition-all hover:bg-white/10"
           >
-            View Collection
+            View More
           </button>
         </div>
       </div>

@@ -22,11 +22,6 @@ const Footer = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/collection" className="text-sm text-gray-500 hover:text-black transition-colors">
-                  Collection
-                </NavLink>
-              </li>
-              <li>
                 <NavLink to="/try-on" className="text-sm text-gray-500 hover:text-black transition-colors">
                   Try On
                 </NavLink>

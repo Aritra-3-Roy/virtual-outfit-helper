@@ -56,23 +56,13 @@ const Index = () => {
       
       <section className="py-24 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-baseline mb-12">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
-                Featured Collection
-              </h2>
-              <p className="mt-2 text-lg text-gray-600 max-w-2xl">
-                Explore our latest styles you can try on virtually before purchasing.
-              </p>
-            </div>
-            
-            <button 
-              onClick={() => navigate('/collection')}
-              className="mt-4 md:mt-0 text-sm font-medium text-black hover:underline"
-            >
-              View all
-              <span className="ml-1">→</span>
-            </button>
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+              Featured Collection
+            </h2>
+            <p className="mt-2 text-lg text-gray-600 max-w-2xl">
+              Explore our latest styles you can try on virtually before purchasing.
+            </p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
